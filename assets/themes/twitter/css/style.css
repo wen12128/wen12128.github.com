@@ -1,28 +1,84 @@
 /* Override some defaults */
-html, body {
+html {
+  display:none;
   background-color: #eee;
+}
+body {
+  background-color: #eee;
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 40px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  word-break: break-all;
 }
 .navbar {
   margin-bottom: 0;
-}
-.container > footer {
-  margin-top: 20px;
-}
-.container > footer p {
-  text-align: center; /* center align it with the container */
 }
 
 /* The white background content wrapper */
 .content {
   background-color: #fff;
   padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  margin: 5px -20px; /* negative indent the amount of the padding to maintain the grid system */
   -webkit-border-radius: 0 0 6px 6px;
      -moz-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px;
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
      -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
           box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+/*panel*/
+.panel {
+  -webkit-box-shadow: 0 2px 6px gray;
+  -moz-box-shadow: 0 2px 6px gray;
+  -o-box-shadow: 0 2px 6px gray;
+  box-shadow: 1px 2px 6px gray;
+
+  margin: 5px 0px;
+  background-color: #fff;
+}
+.panel .header {
+  padding: 10px;
+  border-bottom: 1px solid #e2e2e2;
+}
+.panel .moon {
+  padding: 10px;
+}
+.panel .moon_tags {
+  padding-left: 10px;
+}
+.panel .inner {
+  padding: 10px;
+  line-height: 16px;
+}
+.panel .inner .unstyled li div {
+  text-overflow: ellipsis;
+}
+
+.sep3 {
+  height: 3px;
+}
+
+#backtotop {
+  width:16px;
+  color: gray;
+  padding: 10px 4px;
+  display:none;
+  position: fixed;
+  cursor: pointer;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px dashed gray;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 
 /* Page header tweaks */
@@ -68,4 +124,12 @@ html, body {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	
+
+#footer{
+  border-top:1px solid #ccc;
+  padding:10px 0 5px;
+  background-color: #fff;
+}
+#footer p {
+  text-align: center; /* center align it with the container */
+}
