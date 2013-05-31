@@ -1,0 +1,179 @@
+/* index */
+.clearfix {
+    zoom: 1
+}
+.clearfix:before,.clearfix:after {
+    content: "";
+    display: table
+}
+.clearfix:after {
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden
+}
+
+.blog_teaser {
+    margin-right: 0;
+    margin-left: 0;
+    position: relative;
+    margin-left: 15px;
+    padding: 20px 20px 20px 70px
+}
+.blog_teaser a {
+    color: #269ffb;
+    text-decoration: none;
+}
+.blog_teaser a:hover, a:active {
+    color: #082f4d;
+    text-decoration: underline;
+    outline: 0;
+}
+.blog_teaser h3 {
+    font-weight: 400;
+    color: #737373;
+    margin: 0 0 15px;
+    font-size: 20px;
+    line-height: 25px;
+}
+.blog_teaser h3 a {
+    color: #4c4c4c;
+    text-decoration: none
+}
+
+.blog_teaser .blog_date {
+    position: absolute;
+    top: 15px;
+    left: -13px;
+    width: 62px;
+    height: 46px;
+    margin: 0;
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #fff;
+    text-shadow: 0 1px 0 #c6aa38;
+    text-align: center;
+    background: url("../img/blog_teaser_date_bg.png") top left no-repeat
+}
+.blog_teaser .blog_date span {
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase
+}
+.blog_teaser .blog_date {
+    position: absolute;
+    top: 15px;
+    left: -13px;
+    width: 62px;
+    height: 46px;
+    margin: 0;
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #fff;
+    text-shadow: 0 1px 0 #c6aa38;
+    text-align: center;
+    background: url("../img/blog_teaser_date_bg.png") top left no-repeat
+}
+.blog_teaser .blog_date span {
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase
+}
+
+.blog_teaser .blog_teaser_bar {
+    margin-bottom: 20px;
+}
+.blog_teaser .blog_teaser_bar p {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    width: 100%;
+    margin: 0
+}
+.blog_teaser .blog_teaser_bar p {
+    width: auto;
+}
+.blog_teaser .blog_teaser_bar a {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    font-size: 12px;
+    margin-right: 25px;
+    text-decoration: none
+}
+.blog_teaser .blog_teaser_bar span {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+    color: #cdcdcd
+}
+.blog_teaser .blog_teaser_bar .tags a {
+    margin-right: 0
+}
+.blog_teaser .blog_teaser_bar a.last {
+    margin-right: 25px
+}
+.blog_teaser .blog_teaser_bar .divis {
+    margin: 0 4px
+}
+
+.box {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    -webkit-transition: all 0.15s ease-in;
+    -moz-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in
+}
+.box a img {
+    border: 1px solid #eee
+}
+.box h3 {
+    margin-bottom: 8px;
+    color: #269ffb
+}
+
+@font-face {
+	font-family: 'django-cms';
+	src:url('../font/django-cms.eot');
+	src:url('../font/django-cms.eot?#iefix') format('embedded-opentype'),
+		url('../font/django-cms.svg#django-cms') format('svg'),
+		url('../font/django-cms.woff') format('woff'),
+		url('../font/django-cms.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'django-cms';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-user:before {
+	content: "\36";
+}
+.icon-tag:before {
+	content: "\37";
+}
+.icon-comments:before {
+	content: "\38";
+}
