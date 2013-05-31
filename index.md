@@ -17,7 +17,7 @@ tagline: Supporting tagline
         <p class="comments"><span class="icon-comments"></span><a href="/en/blog/2013/05/30/237-and-242-released/#disqus_thread" data-disqus-identifier="idguid=blogpost-51">0 Comments and 0 Reactions</a></p>
       </div>
       <p></p><p>{{post.description}}</p><p></p>
-      <a href="{{ post.url }}" title="全文阅读">全文阅读</a>
+      <a href="{{ post.url }}" title="鍏ㄦ枃闃呰">鍏ㄦ枃闃呰</a>
    </div>
 
  {% endfor %}
