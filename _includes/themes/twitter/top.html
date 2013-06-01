@@ -1,9 +1,9 @@
     <script type="text/javascript">
-     if( self == top ) {
-       document.documentElement.style.display = 'block' ;
-     } else {
-       top.location = self.location ;
-     }
+     if( self == top ) {document.documentElement.style.display = 'block' ;} else {top.location = self.location ;}
+     $(document).ready(function() {
+       $('#qs').bind("enterKey",function(e){$('#gs').submit();});
+       $('#qs').keyup(function(e){if(e.keyCode == 13) {$(this).trigger("enterKey");}});
+     });
     </script>
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -14,6 +14,15 @@
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
           </ul>
+          <form id="gs" action="http://www.google.com.hk/search" method="get" target="google_window" class="navbar-search pull-left">
+              <input type="text" id="qs" name="q" placeholder="search" class="search-query span2">
+              <input type="hidden" name="ie" value="UTF-8" />
+	      <input type="hidden" name="oe" value="UTF-8" />
+	      <input type="hidden" name="hl" value="zh-CN" />
+	      <input type="hidden" name="domains" value="http://caishanchun.cn" />
+	      <input type="hidden" name="sitesearch" value="caishanchun.cn" />
+          </form>
+          <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1278854412&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1278854412:52" alt="click me" title="click me"/></a>
         </div>
       </div>
     </div>

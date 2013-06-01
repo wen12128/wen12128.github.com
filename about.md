@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 关于我
-description: ""
+description: "卖变频器的"
 ---
 <div id="post">
 

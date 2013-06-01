@@ -1,7 +1,9 @@
 ---
 layout: default
-title: wen12128's blog
-tagline: Supporting tagline
+title: caishanchun
+keywords: PLC
+description: caishanchun's blog
+tagline: 工业自动化
 ---
 {% include JB/setup %}
 
@@ -10,14 +12,13 @@ tagline: Supporting tagline
 
    <div class="blog_teaser box">
       <p class="blog_date">{{ post.date | date: '%d' }}<br><span>{{ post.date | date: '%Y-%m' }}</span></p>
-      - ### [{{ post.title }}]({{ post.url }})
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       <div class="blog_teaser_bar">
-        <p class="user"><a href="#"><span class="icon-user"></span>by Eric</a></p>
-        <p class="tags"><span class="icon-tag"></span><a class="last" href="http://caishanchun.cn/tags.html#jekyll-ref">jeklly</a></p>
-        <p class="comments"><span class="icon-comments"></span><a href="/en/blog/2013/05/30/237-and-242-released/#disqus_thread" data-disqus-identifier="idguid=blogpost-51">0 Comments and 0 Reactions</a></p>
+        <p class="user"><a href="#">by {{post.author}}</a></p>
+        <p class="tags"><a class="last" href="#">{{post.tags}}</a></p>
       </div>
       <p></p><p>{{post.description}}</p><p></p>
-      <a href="{{ post.url }}" title="鍏ㄦ枃闃呰">鍏ㄦ枃闃呰</a>
+      <a href="{{ post.url }}" title="Read more">Read more</a>
    </div>
 
  {% endfor %}

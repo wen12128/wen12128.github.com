@@ -4,15 +4,17 @@ permalink: /:categories/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "CNAME", "changelog.md"]
 auto: true
+#markdown: rdiscount
 pygments: true
+paginate: 8
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : wen12128
-tagline: Site Tagline
+title : caishanchun
+tagline: PLC
 author :
-  name : Eric
+  name : caishanchun
   email : wen12128@yahoo.com.cn
   github : wen12128
   twitter : wen12128
@@ -82,7 +84,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : wen12128
+      short_name : caishanchun
     livefyre :
       site_id : 123
     intensedebate :
