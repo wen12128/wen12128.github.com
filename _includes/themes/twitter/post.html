@@ -12,30 +12,11 @@
           <div class="content">
             {{ content }}
 	    {% include themes/twitter/pagination.html %}
-	    <script type="text/javascript" id="wumiiRelatedItems"></script>
-	    <script type="text/javascript">
-	        var wumiiPermaLink = "{{ post.url }}";
-	        var wumiiTitle = "{{ page.title }}";
-	        var wumiiTags = "{{ post.tags }}";
-	        var wumiiCategories = [{{ post.category }}];
-	        var wumiiSitePrefix = "http://caishanchun.cn/";
-	        var wumiiParams = "&num=3&mode=3&pf=JAVASCRIPT";
-	    </script>
-	    <script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>
-	    <a href="http://www.wumii.com/widget/relatedItems" style="border:0;"><img src="http://static.wumii.cn/images/pixel.png" alt="ÎÞÃÙ" style="border:0;padding:0;margin:0;" /></a>
+	    {% include JB/wumii %}
           </div>
 	  
           <div class="content">
 	    {% include JB/comments %}
-	    <script type="text/javascript">
-		var disqus_shortname = 'wen12128';
-		(function () {
-		    var s = document.createElement('script'); s.async = true;
-		    s.type = 'text/javascript';
-		    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-		    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-		}());
-	    </script>
           </div>
         </div>
 	

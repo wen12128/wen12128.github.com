@@ -1,0 +1,8 @@
+{% if site.safe and site.JB.read.provider and page.JB.read != false %}
+
+{% case site.JB.read.provider %}
+{% when "douban" %}
+  {% include JB/share-providers/douban %}
+{% endcase %}
+
+{% endif %}

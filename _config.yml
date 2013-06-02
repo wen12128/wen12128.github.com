@@ -7,6 +7,7 @@ auto: true
 #markdown: rdiscount
 pygments: true
 paginate: 8
+safe: true
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -15,7 +16,7 @@ title : caishanchun
 tagline: PLC
 author :
   name : caishanchun
-  email : wen12128@yahoo.com.cn
+  email : wen12128@163.com
   github : wen12128
   twitter : wen12128
   feedburner : wen12128
@@ -82,8 +83,10 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disqus
+    provider : duoshuo
     disqus :
+      short_name : caishanchun
+    duoshuo :
       short_name : caishanchun
     livefyre :
       site_id : 123
@@ -100,7 +103,11 @@ JB :
   # Set 'provider' to false to turn analytics off globally.
   #        
   analytics :
-    provider : google 
+    provider : baidu 
+    baidu :
+        bid : 
+    tencent :
+        tid : 
     google : 
         tracking_id : 'UA-37786867-1'
     getclicky :
@@ -115,6 +122,63 @@ JB :
   #
   sharing :
     provider : false
+
+  # Settings for feeds helper. 
+  #
+  feeds :
+    provider : feedburner 
+    feedburner :
+        f_id : 
+    tencent :
+        f_id : 
+    feedsky : 
+        f_id : 
+    git :
+      f_id : 
+
+  # Settings for weibo helper. 
+  #
+  weibo :
+    provider : sina 
+    sina :
+        w_id : 
+    tencent :
+        w_id : 
+
+  # Settings for wumii helper. 
+  #
+  wumii :
+    provider : wumii 
+    wumii :
+        w_id : 
+
+  # Settings for jiathis helper. 
+  #
+  jiathis :
+    provider : jiathis 
+    jiathis :
+        j_id : 
+
+  # Settings for ujian helper. 
+  #
+  ujian :
+    provider : ujian 
+    ujian :
+        u_id : 
+
+  # Settings for advance helper. 
+  #
+  ad :
+    provider : taobao 
+    taobao :
+        a_id : 
+
+  # Settings for read helper. 
+  #
+  read :
+    provider : douban 
+    douban :
+        r_id : 
     
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:

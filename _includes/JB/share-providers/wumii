@@ -1,0 +1,11 @@
+<script type="text/javascript" id="wumiiRelatedItems"></script>
+  <script type="text/javascript">
+    var wumiiPermaLink = "";
+    var wumiiTitle = "";
+    var wumiiTags = "";
+    var wumiiCategories = [];
+    var wumiiSitePrefix = "http://caishanchun.cn/";
+    var wumiiParams = "&num=3&mode=3&pf=JAVASCRIPT";
+  </script>
+  <script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>
+  <a href="http://www.wumii.com/widget/relatedItems" style="border:0;"><img src="http://static.wumii.cn/images/pixel.png" alt="ÎÞÃÙ" style="border:0;padding:0;margin:0;" /></a>

@@ -1,0 +1,8 @@
+{% if site.safe and site.JB.ad.provider and page.JB.ad != false %}
+
+{% case site.JB.ad.provider %}
+{% when "taobao" %}
+  {% include JB/ad-providers/taobao %}
+{% endcase %}
+
+{% endif %}

@@ -1,0 +1,12 @@
+{% if site.safe and site.JB.weibo.provider and page.JB.weibo != false %}
+
+{% case site.JB.weibo.provider %}
+{% when "sina" %}
+  {% include JB/weibo-providers/sina %}
+{% when "tencent" %}
+  {% include JB/weibo-providers/tencent %}
+{% when "custom" %}
+  {% include custom/feeds %}
+{% endcase %}
+
+{% endif %}

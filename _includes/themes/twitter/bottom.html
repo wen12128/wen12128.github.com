@@ -1,28 +1,17 @@
-    <div id='backtotop'>Top</div>
+  {% include JB/ujian %}
+    <div id='backtotop'>T</div>
     <footer id="footer">
       <p>
        &copy; {{ site.author.name }} 2013 
-       &emsp;<a href="https://github.com/wen12128" target="_blank">GitHub</a> Powered by <a href="https://github.com/mojombo/jekyll" target="_blank">Jekyll</a>
+       &emsp;<a href="https://github.com/wen12128" target="_blank">GitHub</a> Powered by <a href="https://github.com/mojombo/jekyll" target="_blank">Jekyll</a>{% include JB/analytics %}
       </p>
     </footer>
-    
-    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
-    <script src="http://libs.baidu.com/bootstrap/2.0.4/js/bootstrap.min.js"></script>
+    <!--<script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/2.0.4/js/bootstrap.min.js"></script>-->
+    <script src="{{ ASSET_PATH }}/js/jquery.js"></script>
+    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
     <script src="{{ ASSET_PATH }}/js/main.js"></script>
-    <script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?type=slide&uid=1790816"></script>
-    <a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="ujian" style="border:0;padding:0;margin:0;" /></a>
-    <script type="text/javascript">var jiathis_config = {data_track_clickback:'true'};</script>
-    <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jiathis_r.js?type=left&amp;uid=1370045491933607" charset="utf-8"></script>
-    {% include JB/analytics %}
-    <script type="text/javascript">
-         document.write('<a style="display:none!important" id="tanx-a-mm_43348658_4048041_13142962"></a>');
-         tanx_s = document.createElement("script");
-         tanx_s.type = "text/javascript";
-         tanx_s.charset = "gbk";
-         tanx_s.id = "tanx-s-mm_43348658_4048041_13142962";
-         tanx_s.async = true;
-         tanx_s.src = "http://p.tanx.com/ex?i=mm_43348658_4048041_13142962";
-         tanx_h = document.getElementsByTagName("head")[0];
-         if(tanx_h)tanx_h.insertBefore(tanx_s,tanx_h.firstChild);
-    </script>
+    <script type="text/javascript">$(document).ready(function() {$('#qs').bind("enterKey",function(e){$('#gs').submit();});$('#qs').keyup(function(e){if(e.keyCode == 13) {$(this).trigger("enterKey");}});});</script>
+    {% include JB/jiathis %}
+    {% include JB/ad %}
     <noscript>Please activate JavaScript to enable all features.</noscript>

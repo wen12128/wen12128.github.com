@@ -1,0 +1,16 @@
+{% if site.safe and site.JB.feeds.provider and page.JB.feeds != false %}
+
+{% case site.JB.feeds.provider %}
+{% when "feedburner" %}
+  {% include JB/feeds-providers/feedburner %}
+{% when "tencent" %}
+  {% include JB/feeds-providers/tencent %}
+{% when "feedsky" %}
+  {% include JB/feeds-providers/feedsky %}
+{% when "git" %}
+  {% include JB/feeds-providers/git %}
+{% when "custom" %}
+  {% include custom/feeds %}
+{% endcase %}
+
+{% endif %}

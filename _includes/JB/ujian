@@ -1,0 +1,8 @@
+{% if site.safe and site.JB.ujian.provider and page.JB.ujian != false %}
+
+{% case site.JB.ujian.provider %}
+{% when "ujian" %}
+  {% include JB/share-providers/ujian %}
+{% endcase %}
+
+{% endif %}

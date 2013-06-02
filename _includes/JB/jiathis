@@ -1,0 +1,8 @@
+{% if site.safe and site.JB.jiathis.provider and page.JB.jiathis != false %}
+
+{% case site.JB.jiathis.provider %}
+{% when "jiathis" %}
+  {% include JB/share-providers/jiathis %}
+{% endcase %}
+
+{% endif %}

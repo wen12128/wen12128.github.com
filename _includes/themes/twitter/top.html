@@ -1,11 +1,5 @@
-    <script type="text/javascript">
-     if( self == top ) {document.documentElement.style.display = 'block' ;} else {top.location = self.location ;}
-     $(document).ready(function() {
-       $('#qs').bind("enterKey",function(e){$('#gs').submit();});
-       $('#qs').keyup(function(e){if(e.keyCode == 13) {$(this).trigger("enterKey");}});
-     });
-    </script>
-    <div class="navbar navbar-fixed-top">
+<script type="text/javascript">if( self == top ) {document.documentElement.style.display = 'block' ;} else {top.location = self.location ;}</script>
+    <div id="navbar" class="navbar navbar-fixed-top" style="padding-left:0;padding-right:0;">
       <div class="navbar-inner">
         <div class="container">
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
@@ -14,15 +8,19 @@
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
           </ul>
-          <form id="gs" action="http://www.google.com.hk/search" method="get" target="google_window" class="navbar-search pull-left">
-              <input type="text" id="qs" name="q" placeholder="search" class="search-query span2">
-              <input type="hidden" name="ie" value="UTF-8" />
-	      <input type="hidden" name="oe" value="UTF-8" />
-	      <input type="hidden" name="hl" value="zh-CN" />
-	      <input type="hidden" name="domains" value="http://caishanchun.cn" />
-	      <input type="hidden" name="sitesearch" value="caishanchun.cn" />
-          </form>
-          <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1278854412&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1278854412:52" alt="click me" title="click me"/></a>
+          <ul class="nav pull-right nav-right">
+            <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1278854412&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1278854412:52" alt="click me" title="click me"/></a></li>
+            <li>
+              <form id="gs" action="http://www.google.com.hk/search" method="get" target="google_window" class="navbar-search pull-left">
+                <input type="text" id="qs" name="q" placeholder="search" class="search-query span2">
+                <input type="hidden" name="ie" value="UTF-8" />
+                <input type="hidden" name="oe" value="UTF-8" />
+                <input type="hidden" name="hl" value="zh-CN" />
+                <input type="hidden" name="domains" value="http://caishanchun.cn" />
+                <input type="hidden" name="sitesearch" value="caishanchun.cn" />
+              </form>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

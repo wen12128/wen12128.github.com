@@ -1,0 +1,8 @@
+{% if site.safe and site.JB.wumii.provider and page.JB.wumii != false %}
+
+{% case site.JB.wumii.provider %}
+{% when "wumii" %}
+  {% include JB/share-providers/wumii %}
+{% endcase %}
+
+{% endif %}
