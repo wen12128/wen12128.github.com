@@ -1,9 +1,9 @@
 <script type="text/javascript" id="wumiiRelatedItems"></script>
   <script type="text/javascript">
-    var wumiiPermaLink = "";
-    var wumiiTitle = "";
-    var wumiiTags = "";
-    var wumiiCategories = [];
+    var wumiiPermaLink = "{{post.url}}";
+    var wumiiTitle = "{{page.title}}";
+    var wumiiTags = "{{post.tags}}";
+    var wumiiCategories = [{{post.category}}];
     var wumiiSitePrefix = "http://caishanchun.cn/";
     var wumiiParams = "&num=3&mode=3&pf=JAVASCRIPT";
   </script>
