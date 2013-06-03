@@ -10,14 +10,8 @@ group: navigation
     {% include JB/read %}
  </div>
  <div class="showContent">
-      <ul>
-        <li><a href='http://wen12128.cnblogs.com'>cnblogs</a></li>
-
-        <li><a href='http://github.com/wen12128'>github</a></li>
-
-        <li><a href='mailto://wen12128@gmail.com'>email</a></li>
-
-        <li><a href='http://wen12128.weibo.com'>weibo</a></li>
-      </ul>
-      <br/><br/><hr/>
+        [cnblogs](http://wen12128.cnblogs.com/)<br/>
+        [github](http://github.com/wen12128/)<br/>
+        [email](mailto://wen12128@gmail.com/)<br/>
+        [weibo](http://wen12128.weibo.com/)<br/>
  </div>
