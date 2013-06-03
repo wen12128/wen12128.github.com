@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wb="http://open.weibo.com/wb">
+  <head>
+    {% include themes/twitter/head.html %}
+  </head>
+
+  <body>
+    {% include themes/twitter/top.html %}
+    <div class="container">
+      <div class="row-fluid show-grid">
+        <div class="span8">
+          {{ content }}
+        </div>
+        <div class="span4">
+          {% include themes/twitter/right.html %}
+        </div>
+      </div>
+    </div>
+    
+    <div id='backtotop'>T</div>
+    <footer id="footer">
+      <p>
+       &copy; {{ site.author.name }} 2013 
+       &emsp;<a href="https://github.com/wen12128" target="_blank">GitHub</a> Powered by <a href="https://github.com/mojombo/jekyll" target="_blank">Jekyll</a>
+      </p>
+    </footer>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/2.0.4/js/bootstrap.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/main.js"></script>
+    <script type="text/javascript">$(document).ready(function(){$('#qs').bind("enterKey",function(e){$('#gs').submit();});$('#qs').keyup(function(e){if(e.keyCode==13){$(this).trigger("enterKey");}});});</script>
+    <noscript>Please activate JavaScript to enable all features.</noscript>
+  </body>
+</html>

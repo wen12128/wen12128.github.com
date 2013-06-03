@@ -1,12 +1,13 @@
 /* index */
-.clearfix {
+.blog_list p{}
+.blog_clearfix {
     zoom: 1
 }
-.clearfix:before,.clearfix:after {
+.blog_clearfix:before,.blog_clearfix:after {
     content: "";
     display: table
 }
-.clearfix:after {
+.blog_clearfix:after {
     clear: both;
     display: block;
     width: 0;
@@ -43,27 +44,6 @@
     text-decoration: none
 }
 
-.blog_teaser .blog_date {
-    position: absolute;
-    top: 15px;
-    left: -13px;
-    width: 62px;
-    height: 46px;
-    margin: 0;
-    padding-top: 10px;
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 14px;
-    color: #fff;
-    text-shadow: 0 1px 0 #c6aa38;
-    text-align: center;
-    background: url("../img/blog_teaser_date_bg.png") top left no-repeat
-}
-.blog_teaser .blog_date span {
-    font-size: 13px;
-    font-weight: normal;
-    text-transform: uppercase
-}
 .blog_teaser .blog_date {
     position: absolute;
     top: 15px;
@@ -149,31 +129,20 @@
     color: #269ffb
 }
 
-@font-face {
-	font-family: 'django-cms';
-	src:url('../font/django-cms.eot');
-	src:url('../font/django-cms.eot?#iefix') format('embedded-opentype'),
-		url('../font/django-cms.svg#django-cms') format('svg'),
-		url('../font/django-cms.woff') format('woff'),
-		url('../font/django-cms.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+[class^="cus-"],[class*=" cus-"] {
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("../img/cus-icons.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
 }
-
-/* Use the following CSS code if you want to have a class per icon */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-	font-family: 'django-cms';
-	font-style: normal;
-	speak: none;
-	font-weight: normal;
-	-webkit-font-smoothing: antialiased;
+[class^="cus-"]:last-child,[class*=" cus-"]:last-child {
+  *margin-left: 0;
 }
-.icon-user:before {
-	content: "\36";
-}
-.icon-tag:before {
-	content: "\37";
-}
-.icon-comments:before {
-	content: "\38";
-}
+.cus-comment{ background-position: 0 0; width: 16px; height: 16px; } 
+.cus-tag{ background-position: -21px 0; width: 16px; height: 16px; } 
+.cus-user{ background-position: -42px 0; width: 16px; height: 16px; } 

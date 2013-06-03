@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: show
 title: Pages
 header: Pages
 group: navigation
@@ -9,7 +9,6 @@ tagline: PLC
 ---
 {% include JB/setup %}
 
-<div class="blog_list clearfix">
  <div class="content">
   <h2>All Pages</h2>
   <ul>
@@ -17,4 +16,3 @@ tagline: PLC
   {% include JB/pages_list %}
   </ul>
  </div>
-</div>

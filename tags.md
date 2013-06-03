@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: show
 title: Tag
 header: Posts By Tag
 group: navigation
@@ -9,19 +9,17 @@ tagline: PLC
 ---
 {% include JB/setup %}
 
-<div class="blog_list clearfix">
  <div class="content">
   <ul class="tag_box inline">
-  {% assign tags_list = site.tags %}  
+  {% assign tags_list = site.tags %}
   {% include JB/tags_list %}
   </ul>
   <hr/>
   {% for tag in site.tags %} 
   <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
   <ul>
-  {% assign pages_list = tag[1] %}  
+  {% assign pages_list = tag[1] %}
   {% include JB/pages_list %}
   </ul>
   {% endfor %}
  </div>
-</div>

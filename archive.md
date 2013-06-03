@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: show
 title: Archive
 header: Post Archive
 group: navigation
@@ -9,7 +9,6 @@ tagline: 工业自动化
 ---
 {% include JB/setup %}
 
-<div class="blog_list clearfix">
  <div class="content">
   {% for post in site.posts %}
 
@@ -17,4 +16,3 @@ tagline: 工业自动化
 
   {% endfor %}
  </div>
-</div>
