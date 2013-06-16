@@ -169,9 +169,11 @@ JB :
   # Settings for advance helper. 
   #
   ad :
-    provider : taobao 
+    provider : amazon 
     taobao :
         a_id : 
+    amazon :
+        a_id : wen12128-23
 
   # Settings for read helper. 
   #

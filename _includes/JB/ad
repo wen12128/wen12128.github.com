@@ -3,6 +3,8 @@
 {% case site.JB.ad.provider %}
 {% when "taobao" %}
   {% include JB/ad-providers/taobao %}
+{% when "amazon" %}
+  {% include JB/ad-providers/amazon %}
 {% endcase %}
 
 {% endif %}
