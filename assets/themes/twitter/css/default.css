@@ -143,6 +143,8 @@
 [class^="cus-"]:last-child,[class*=" cus-"]:last-child {
   *margin-left: 0;
 }
-.cus-comment{ background-position: 0 0; width: 16px; height: 16px; } 
-.cus-tag{ background-position: -21px 0; width: 16px; height: 16px; } 
-.cus-user{ background-position: -42px 0; width: 16px; height: 16px; } 
+.cus-comment{ background-position: 0 0; width: 70px; height: 16px; } 
+.cus-tag{ background-position: -21px 0; width: 70px; height: 16px; } 
+.cus-user{ background-position: -42px 0; width: 70px; height: 16px; } 
+.cus-tag a{ margin-left: 20px; } 
+.cus-user a{ margin-left: 20px; } 
