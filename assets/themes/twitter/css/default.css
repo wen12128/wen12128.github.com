@@ -146,5 +146,5 @@
 .cus-comment{ background-position: 0 0; width: 70px; height: 16px; } 
 .cus-tag{ background-position: -21px 0; width: 70px; height: 16px; } 
 .cus-user{ background-position: -42px 0; width: 70px; height: 16px; } 
-.cus-tag a{ margin-left: 20px; } 
-.cus-user a{ margin-left: 20px; } 
+.cus-tag a{ margin-left: 40px;width:50px;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;-moz-binding:url('ellipsis.xml#ellipsis');overflow:hidden; } 
+.cus-user a{ margin-left: 20px;width:50px;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;-moz-binding:url('ellipsis.xml#ellipsis');overflow:hidden; } 
