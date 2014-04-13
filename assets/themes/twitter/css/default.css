@@ -90,7 +90,7 @@
     zoom: 1;
     *display: inline;
     font-size: 12px;
-    margin-right: 25px;
+    margin-left: 18px;
     text-decoration: none
 }
 .blog_teaser .blog_teaser_bar span {
@@ -103,7 +103,8 @@
     margin-right: 0
 }
 .blog_teaser .blog_teaser_bar a.last {
-    margin-right: 25px
+    margin-right: 25px;
+    width:60px;
 }
 .blog_teaser .blog_teaser_bar .divis {
     margin: 0 4px
@@ -145,6 +146,6 @@
 }
 .cus-comment{ background-position: 0 0; width: 16px; height: 16px; } 
 .cus-tag{ background-position: -21px 0; width: 16px; height: 16px; } 
-.cus-user{ background-position: -42px 0; width: 70px; height: 16px; } 
+.cus-user{ background-position: -42px 0; width: 60px; height: 16px; } 
 .cus-tag a{ margin-left: 20px;width:50px;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;-moz-binding:url('ellipsis.xml#ellipsis');overflow:hidden; } 
 .cus-user a{ margin-left: 20px;width:50px;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;-moz-binding:url('ellipsis.xml#ellipsis');overflow:hidden; } 
